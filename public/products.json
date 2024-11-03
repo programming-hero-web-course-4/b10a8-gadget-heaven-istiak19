@@ -1,0 +1,178 @@
+[
+    {
+        "product_id": 1,
+        "product_title": "Gaming Laptop X1",
+        "product_image": "https://i.ibb.co.com/x1MRkmd/pic-1.jpg",
+        "category": "computer",
+        "price": 1200,
+        "description": "High-performance gaming laptop with dedicated graphics.",
+        "specification": ["16GB RAM", "1TB SSD", "Intel i7 Processor", "NVIDIA GTX 3060"],
+        "availability": true,
+        "rating": 4.5
+    },
+    {
+        "product_id": 2,
+        "product_title": "UltraBook Z",
+        "product_image": "https://i.ibb.co.com/ZKjH1V4/pic-2.webp",
+        "category": "computer",
+        "price": 950,
+        "description": "Lightweight and portable ultrabook for professionals.",
+        "specification": ["8GB RAM", "512GB SSD", "Intel i5 Processor", "Integrated Graphics"],
+        "availability": true,
+        "rating": 4.2
+    },
+    {
+        "product_id": 3,
+        "product_title": "All-in-One Desktop Y",
+        "product_image": "https://i.ibb.co.com/nRJNxZc/pic-3.webp",
+        "category": "computer",
+        "price": 1500,
+        "description": "Sleek all-in-one desktop with a large screen.",
+        "specification": ["32GB RAM", "2TB SSD", "Intel i9 Processor", "4K Display"],
+        "availability": false,
+        "rating": 4.8
+    },
+    {
+        "product_id": 4,
+        "product_title": "Budget Laptop A",
+        "product_image": "https://i.ibb.co.com/HG8YNQp/pic-4.webp",
+        "category": "computer",
+        "price": 600,
+        "description": "Affordable laptop with essential features for students.",
+        "specification": ["4GB RAM", "256GB SSD", "Intel i3 Processor"],
+        "availability": true,
+        "rating": 3.9
+    },
+    {
+        "product_id": 5,
+        "product_title": "Gaming PC B",
+        "product_image": "https://i.ibb.co.com/w6S61h5/pic-5.webp",
+        "category": "computer",
+        "price": 2000,
+        "description": "High-performance desktop PC for gaming enthusiasts.",
+        "specification": ["32GB RAM", "2TB HDD + 512GB SSD", "AMD Ryzen 9", "NVIDIA RTX 3080"],
+        "availability": true,
+        "rating": 4.7
+    },
+    {
+        "product_id": 6,
+        "product_title": "Business Laptop Pro",
+        "product_image": "https://i.ibb.co.com/YjSyB9F/pic-6.webp",
+        "category": "computer",
+        "price": 1300,
+        "description": "Professional-grade laptop with enhanced security features.",
+        "specification": ["16GB RAM", "1TB SSD", "Intel i7 vPro"],
+        "availability": false,
+        "rating": 4.3
+    },
+    {
+        "product_id": 7,
+        "product_title": "Smartphone Galaxy X",
+        "product_image": "https://i.ibb.co.com/my3TTNg/pic-7.jpg",
+        "category": "phone",
+        "price": 700,
+        "description": "Latest smartphone with powerful features and battery life.",
+        "specification": ["8GB RAM", "128GB Storage", "Triple Camera"],
+        "availability": true,
+        "rating": 4.6
+    },
+    {
+        "product_id": 8,
+        "product_title": "Smartphone Mini Pro",
+        "product_image": "https://i.ibb.co.com/rc2fBb7/pic-8.jpg",
+        "category": "phone",
+        "price": 500,
+        "description": "Compact smartphone with high-end performance.",
+        "specification": ["6GB RAM", "64GB Storage", "Dual Camera"],
+        "availability": false,
+        "rating": 4.1
+    },
+    {
+        "product_id": 9,
+        "product_title": "Smartwatch ActiveFit",
+        "product_image": "https://i.ibb.co.com/0c8pNJD/pic-9.webp",
+        "category": "smartwatch",
+        "price": 200,
+        "description": "Fitness-focused smartwatch with heart rate monitor.",
+        "specification": ["Waterproof", "24-hour heart monitoring", "GPS"],
+        "availability": true,
+        "rating": 4.4
+    },
+    {
+        "product_id": 10,
+        "product_title": "Classic Smartwatch",
+        "product_image": "https://i.ibb.co.com/sHmcmym/pic-10.jpg",
+        "category": "smartwatch",
+        "price": 180,
+        "description": "Classic smartwatch with essential health tracking.",
+        "specification": ["Step Tracker", "Sleep Monitor", "Bluetooth Connectivity"],
+        "availability": false,
+        "rating": 4.0
+    },
+    {
+        "product_id": 11,
+        "product_title": "Portable Charger 20,000mAh",
+        "product_image": "https://i.ibb.co.com/Tkkpw6w/pic-11.jpg",
+        "category": "charger",
+        "price": 40,
+        "description": "High-capacity portable charger for multiple devices.",
+        "specification": ["20,000mAh", "USB-C, USB-A", "Quick Charge"],
+        "availability": true,
+        "rating": 4.5
+    },
+    {
+        "product_id": 12,
+        "product_title": "Power Bank 10,000mAh",
+        "product_image": "https://i.ibb.co.com/VT9Q9Rv/pic-12.jpg",
+        "category": "power bank",
+        "price": 25,
+        "description": "Compact power bank with fast charging support.",
+        "specification": ["10,000mAh", "Dual USB Ports", "LED Indicator"],
+        "availability": false,
+        "rating": 4.2
+    },
+    {
+        "product_id": 13,
+        "product_title": "Fast Wireless Charger",
+        "product_image": "https://i.ibb.co.com/LhzdSqc/pic-13.jpg",
+        "category": "charger",
+        "price": 30,
+        "description": "Quick wireless charging pad compatible with most devices.",
+        "specification": ["10W", "Qi-Certified", "Fast Charging"],
+        "availability": true,
+        "rating": 4.3
+    },
+    {
+        "product_id": 14,
+        "product_title": "Smartwatch Fitness Pro",
+        "product_image": "https://i.ibb.co.com/Yyxv55g/pic-14.jpg",
+        "category": "smartwatch",
+        "price": 250,
+        "description": "Advanced smartwatch with multiple fitness tracking options.",
+        "specification": ["Heart Rate Monitor", "GPS", "Waterproof"],
+        "availability": true,
+        "rating": 4.6
+    },
+    {
+        "product_id": 15,
+        "product_title": "Compact Power Bank 5000mAh",
+        "product_image": "https://i.ibb.co.com/SBrHbFk/pic-15.webp",
+        "category": "power bank",
+        "price": 20,
+        "description": "Small power bank for emergency charging needs.",
+        "specification": ["5,000mAh", "USB-C", "LED Indicator"],
+        "availability": false,
+        "rating": 3.8
+    },
+    {
+        "product_id": 16,
+        "product_title": "Smartphone UltraMax",
+        "product_image": "https://i.ibb.co.com/d51bGdT/pic-16.jpg",
+        "category": "phone",
+        "price": 800,
+        "description": "High-end smartphone with an impressive camera and display.",
+        "specification": ["12GB RAM", "256GB Storage", "Quad Camera"],
+        "availability": true,
+        "rating": 4.9
+    }
+]
