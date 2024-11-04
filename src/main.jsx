@@ -11,6 +11,7 @@ import Statistics from './Components/Statistics/Statistics';
 import ErrorPage from './Components/ErrorPage/ErrorPage';
 import DashBoard from './Components/DashBoard/DashBoard';
 import ProductCard from './Components/ProductCard/ProductCard';
+import ProductDetails from './Components/ProductDetails/ProductDetails';
 
 const router = createBrowserRouter([
   {
@@ -22,13 +23,22 @@ const router = createBrowserRouter([
         path: '/',
         loader: () => fetch('/products.json'),
         element: <Home></Home>,
-        children:[
+        children: [
           {
-            path:'/category/:categoryName',
-            loader:()=>fetch('../products.json'),
-            element:<ProductCard></ProductCard>
+            path: '/',
+            loader: () => fetch('../products.json'),
+            element: <ProductCard></ProductCard>
+          },
+          {
+            path: '/category/:categoryName',
+            loader: () => fetch('../products.json'),
+            element: <ProductCard></ProductCard>
           }
         ],
+      },
+      {
+        path: '/products/:id',
+        element:<ProductDetails></ProductDetails>
       },
       {
         path: '/statistics',
