@@ -3,7 +3,6 @@ import { Bar, BarChart,Legend, Tooltip, XAxis, YAxis } from 'recharts';
 
 const Statistics = () => {
     const products = useLoaderData()
-    console.log(products)
     return (
         <div>
             <div className="bg-[#9538E2] text-center py-8 space-y-3">
