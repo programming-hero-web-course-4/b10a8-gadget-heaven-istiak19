@@ -12,7 +12,7 @@ const Statistics = () => {
             </div>
             <div className="max-w-7xl mx-auto my-10">
                 <h2 className="my-5">Statistics</h2>
-                <BarChart width={1300} height={250} data={products}>
+                <BarChart width={1300} height={450} data={products}>
                     <XAxis dataKey="product_title" />
                     <YAxis />
                     <Tooltip />
