@@ -6,7 +6,12 @@
         "category": "computer",
         "price": 1200,
         "description": "High-performance gaming laptop with dedicated graphics.",
-        "specification": ["16GB RAM", "1TB SSD", "Intel i7 Processor", "NVIDIA GTX 3060"],
+        "specification": [
+            "16GB RAM",
+            "1TB SSD",
+            "Intel i7 Processor",
+            "NVIDIA GTX 3060"
+        ],
         "availability": true,
         "rating": 4.5
     },
@@ -17,7 +22,12 @@
         "category": "computer",
         "price": 950,
         "description": "Lightweight and portable ultrabook for professionals.",
-        "specification": ["8GB RAM", "512GB SSD", "Intel i5 Processor", "Integrated Graphics"],
+        "specification": [
+            "8GB RAM",
+            "512GB SSD",
+            "Intel i5 Processor",
+            "Integrated Graphics"
+        ],
         "availability": true,
         "rating": 4.2
     },
@@ -28,7 +38,12 @@
         "category": "computer",
         "price": 1500,
         "description": "Sleek all-in-one desktop with a large screen.",
-        "specification": ["32GB RAM", "2TB SSD", "Intel i9 Processor", "4K Display"],
+        "specification": [
+            "32GB RAM",
+            "2TB SSD",
+            "Intel i9 Processor",
+            "4K Display"
+        ],
         "availability": false,
         "rating": 4.8
     },
@@ -39,7 +54,11 @@
         "category": "computer",
         "price": 600,
         "description": "Affordable laptop with essential features for students.",
-        "specification": ["4GB RAM", "256GB SSD", "Intel i3 Processor"],
+        "specification": [
+            "4GB RAM",
+            "256GB SSD",
+            "Intel i3 Processor"
+        ],
         "availability": true,
         "rating": 3.9
     },
@@ -50,7 +69,12 @@
         "category": "computer",
         "price": 2000,
         "description": "High-performance desktop PC for gaming enthusiasts.",
-        "specification": ["32GB RAM", "2TB HDD + 512GB SSD", "AMD Ryzen 9", "NVIDIA RTX 3080"],
+        "specification": [
+            "32GB RAM",
+            "2TB HDD + 512GB SSD",
+            "AMD Ryzen 9",
+            "NVIDIA RTX 3080"
+        ],
         "availability": true,
         "rating": 4.7
     },
@@ -61,7 +85,11 @@
         "category": "computer",
         "price": 1300,
         "description": "Professional-grade laptop with enhanced security features.",
-        "specification": ["16GB RAM", "1TB SSD", "Intel i7 vPro"],
+        "specification": [
+            "16GB RAM",
+            "1TB SSD",
+            "Intel i7 vPro"
+        ],
         "availability": false,
         "rating": 4.3
     },
@@ -72,7 +100,11 @@
         "category": "phone",
         "price": 700,
         "description": "Latest smartphone with powerful features and battery life.",
-        "specification": ["8GB RAM", "128GB Storage", "Triple Camera"],
+        "specification": [
+            "8GB RAM",
+            "128GB Storage",
+            "Triple Camera"
+        ],
         "availability": true,
         "rating": 4.6
     },
@@ -83,7 +115,11 @@
         "category": "phone",
         "price": 500,
         "description": "Compact smartphone with high-end performance.",
-        "specification": ["6GB RAM", "64GB Storage", "Dual Camera"],
+        "specification": [
+            "6GB RAM",
+            "64GB Storage",
+            "Dual Camera"
+        ],
         "availability": false,
         "rating": 4.1
     },
@@ -94,7 +130,11 @@
         "category": "smartwatch",
         "price": 200,
         "description": "Fitness-focused smartwatch with heart rate monitor.",
-        "specification": ["Waterproof", "24-hour heart monitoring", "GPS"],
+        "specification": [
+            "Waterproof",
+            "24-hour heart monitoring",
+            "GPS"
+        ],
         "availability": true,
         "rating": 4.4
     },
@@ -105,7 +145,11 @@
         "category": "smartwatch",
         "price": 180,
         "description": "Classic smartwatch with essential health tracking.",
-        "specification": ["Step Tracker", "Sleep Monitor", "Bluetooth Connectivity"],
+        "specification": [
+            "Step Tracker",
+            "Sleep Monitor",
+            "Bluetooth Connectivity"
+        ],
         "availability": false,
         "rating": 4.0
     },
@@ -114,9 +158,13 @@
         "product_title": "Portable Charger 20,000mAh",
         "product_image": "https://i.ibb.co.com/Tkkpw6w/pic-11.jpg",
         "category": "charger",
-        "price": 40,
+        "price": 50,
         "description": "High-capacity portable charger for multiple devices.",
-        "specification": ["20,000mAh", "USB-C, USB-A", "Quick Charge"],
+        "specification": [
+            "20,000mAh",
+            "USB-C, USB-A",
+            "Quick Charge"
+        ],
         "availability": true,
         "rating": 4.5
     },
@@ -125,9 +173,13 @@
         "product_title": "Power Bank 10,000mAh",
         "product_image": "https://i.ibb.co.com/VT9Q9Rv/pic-12.jpg",
         "category": "power bank",
-        "price": 25,
+        "price": 60,
         "description": "Compact power bank with fast charging support.",
-        "specification": ["10,000mAh", "Dual USB Ports", "LED Indicator"],
+        "specification": [
+            "10,000mAh",
+            "Dual USB Ports",
+            "LED Indicator"
+        ],
         "availability": false,
         "rating": 4.2
     },
@@ -136,9 +188,13 @@
         "product_title": "Fast Wireless Charger",
         "product_image": "https://i.ibb.co.com/LhzdSqc/pic-13.jpg",
         "category": "charger",
-        "price": 30,
+        "price": 55,
         "description": "Quick wireless charging pad compatible with most devices.",
-        "specification": ["10W", "Qi-Certified", "Fast Charging"],
+        "specification": [
+            "10W",
+            "Qi-Certified",
+            "Fast Charging"
+        ],
         "availability": true,
         "rating": 4.3
     },
@@ -149,7 +205,11 @@
         "category": "smartwatch",
         "price": 250,
         "description": "Advanced smartwatch with multiple fitness tracking options.",
-        "specification": ["Heart Rate Monitor", "GPS", "Waterproof"],
+        "specification": [
+            "Heart Rate Monitor",
+            "GPS",
+            "Waterproof"
+        ],
         "availability": true,
         "rating": 4.6
     },
@@ -158,9 +218,13 @@
         "product_title": "Compact Power Bank 5000mAh",
         "product_image": "https://i.ibb.co.com/SBrHbFk/pic-15.webp",
         "category": "power bank",
-        "price": 20,
+        "price": 50,
         "description": "Small power bank for emergency charging needs.",
-        "specification": ["5,000mAh", "USB-C", "LED Indicator"],
+        "specification": [
+            "5,000mAh",
+            "USB-C",
+            "LED Indicator"
+        ],
         "availability": false,
         "rating": 3.8
     },
@@ -171,7 +235,11 @@
         "category": "phone",
         "price": 800,
         "description": "High-end smartphone with an impressive camera and display.",
-        "specification": ["12GB RAM", "256GB Storage", "Quad Camera"],
+        "specification": [
+            "12GB RAM",
+            "256GB Storage",
+            "Quad Camera"
+        ],
         "availability": true,
         "rating": 4.9
     }

@@ -9,22 +9,35 @@ import MainLayout from './Components/MainLayout/MainLayout';
 import Home from './Components/Home/Home';
 import Statistics from './Components/Statistics/Statistics';
 import ErrorPage from './Components/ErrorPage/ErrorPage';
+import DashBoard from './Components/DashBoard/DashBoard';
+import ProductCard from './Components/ProductCard/ProductCard';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <MainLayout></MainLayout>,
-    errorElement:<ErrorPage></ErrorPage>,
-    children:[
+    errorElement: <ErrorPage></ErrorPage>,
+    children: [
       {
-        path:'/',
-        loader:()=>fetch('/products.json'),
-        element:<Home></Home>
+        path: '/',
+        loader: () => fetch('/products.json'),
+        element: <Home></Home>,
+        children:[
+          {
+            path:'/category/:categoryName',
+            loader:()=>fetch('../products.json'),
+            element:<ProductCard></ProductCard>
+          }
+        ],
       },
       {
-        path:'/statistics',
-        loader:()=>fetch('/products.json'),
-        element:<Statistics></Statistics>
+        path: '/statistics',
+        loader: () => fetch('/products.json'),
+        element: <Statistics></Statistics>
+      },
+      {
+        path: '/dashboard',
+        element: <DashBoard></DashBoard>
       },
     ]
   },
