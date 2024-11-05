@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 
-const CartCard = ({ cart, handleRemove }) => {
-    const { description, price, product_image, product_id, product_title } = cart
+const Wish = ({ wish,handleRemove }) => {
+    const { description, price, product_image, product_id, product_title } = wish
     return (
         <div className="shadow-lg mt-10 rounded-lg flex justify-between items-center">
             <div className="flex gap-5 flex-col lg:flex-row p-6">
@@ -17,14 +17,14 @@ const CartCard = ({ cart, handleRemove }) => {
                 </div>
             </div>
             <div>
-                <button onClick={() => handleRemove(product_id)} className='mr-10'><i class="fa-regular fa-circle-xmark text-red-400"></i></button>
+                <button onClick={()=>handleRemove(product_id)} className='mr-10'><i class="fa-regular fa-circle-xmark text-red-400"></i></button>
             </div>
         </div>
     );
 };
 
-CartCard.propTypes = {
+Wish.propTypes = {
 
 };
 
-export default CartCard;
+export default Wish;

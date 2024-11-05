@@ -40,11 +40,11 @@ const Cart = () => {
 
     return (
         <div>
-            <div className="flex justify-between items-center">
-                <h2>Cart</h2>
+            <div className="flex justify-between items-center mt-5">
+                <h2 className="font-bold text-xl">Cart</h2>
                 <div className="flex items-center gap-5">
-                    <h2>Total price: {price}</h2>
-                    <button onClick={handleSortedPrice} className="btn">Sort By Price</button>
+                    <h2 className="font-bold text-xl">Total Cost: {price}</h2>
+                    <button onClick={handleSortedPrice} className="border-2 border-purple-400 rounded-full py-3 px-5 text-purple-500 btn">Sort By Price</button>
                 </div>
             </div>
             <div>
