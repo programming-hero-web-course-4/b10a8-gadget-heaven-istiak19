@@ -14,6 +14,7 @@ import ProductCard from './Components/ProductCard/ProductCard';
 import ProductDetails from './Components/ProductDetails/ProductDetails';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import ProOrder from './Components/ProOrder/ProOrder';
 
 const router = createBrowserRouter([
   {
@@ -52,6 +53,10 @@ const router = createBrowserRouter([
         path: '/dashboard',
         element: <DashBoard></DashBoard>
       },
+      {
+        path:'/pre-order',
+        element:<ProOrder></ProOrder>
+      }
     ]
   },
 ]);
