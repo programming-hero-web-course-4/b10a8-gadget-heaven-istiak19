@@ -38,6 +38,12 @@ const Cart = () => {
         setCartList(cartListFilter)
     }
 
+    const handlePurchaseBtn = () => {
+        setCartList([])
+        localStorage.removeItem('cart-list')
+        document.getElementById('my_modal_1').showModal()
+    }
+
     return (
         <div>
             <div className="flex justify-between items-center mt-5">
@@ -45,6 +51,7 @@ const Cart = () => {
                 <div className="flex items-center gap-5">
                     <h2 className="font-bold text-xl">Total Cost: {price}</h2>
                     <button onClick={handleSortedPrice} className="border-2 border-purple-400 rounded-full py-3 px-5 text-purple-500 btn">Sort By Price</button>
+                    <button onClick={handlePurchaseBtn}>Purchase</button>
                 </div>
             </div>
             <div>
@@ -52,6 +59,19 @@ const Cart = () => {
                     cartList.map(cart => <CartCard key={cart.product_id} cart={cart} handleRemove={handleRemove}></CartCard>)
                 }
             </div>
+            {/* Show the modal */}
+            <dialog id="my_modal_1" className="modal">
+                <div className="modal-box text-center space-y-5">
+                    <p><i class="fa-solid fa-certificate text-[72px] text-[#3EB655]"></i></p>
+                    <h3 className="font-bold text-lg">Payment Successfully</h3>
+                    <p>Thanks For Purchasing.</p>
+                    <div className="modal-action">
+                        <form method="dialog">
+                            <button className="btn">Close</button>
+                        </form>
+                    </div>
+                </div>
+            </dialog>
         </div>
     );
 };
