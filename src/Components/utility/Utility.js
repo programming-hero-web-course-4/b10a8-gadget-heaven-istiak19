@@ -17,6 +17,13 @@ const addToStoredCartList = (id) => {
     }
 }
 
+const removeCartList = (id) => {
+    console.log(id)
+    const storedList = getStoredCartList()
+    const remaining = storedList.filter(i => i != id)
+    localStorage.setItem('cart-list', JSON.stringify(remaining))
+}
+
 // WishList Add to Local storage
 const getStoredWishList = () => {
     const storedWishListStr = localStorage.getItem('wish-list');
@@ -36,4 +43,4 @@ const addToStoredWishList = (id) => {
     }
 }
 
-export { addToStoredCartList, getStoredCartList, addToStoredWishList, getStoredWishList };
+export { addToStoredCartList, getStoredCartList, addToStoredWishList, getStoredWishList, removeCartList };
