@@ -9,7 +9,7 @@ const Card = ({ product }) => {
     }
     return (
         <div className="shadow-lg h-full rounded-lg border-2 border-purple-300">
-            <figure className='w-[280px] h-[181px] p-5'>
+            <figure className='w-[300px] h-[280px] p-5'>
                 <img className='w-full h-full rounded-xl'
                     src={product_image}
                     alt={product_title} />

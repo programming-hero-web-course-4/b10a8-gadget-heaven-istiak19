@@ -50,7 +50,7 @@
     {
         "product_id": 4,
         "product_title": "Budget Laptop A",
-        "product_image": "https://i.ibb.co.com/HG8YNQp/pic-4.webp",
+        "product_image": "https://i.ibb.co.com/G9WfqXL/pic-4.png",
         "category": "computer",
         "price": 600,
         "description": "Affordable laptop with essential features for students.",
@@ -81,7 +81,7 @@
     {
         "product_id": 6,
         "product_title": "Business Laptop Pro",
-        "product_image": "https://i.ibb.co.com/YjSyB9F/pic-6.webp",
+        "product_image": "https://i.ibb.co.com/VQzwNj7/pic4.jpg",
         "category": "computer",
         "price": 1300,
         "description": "Professional-grade laptop with enhanced security features.",
@@ -96,7 +96,7 @@
     {
         "product_id": 7,
         "product_title": "Smartphone Galaxy X",
-        "product_image": "https://i.ibb.co.com/my3TTNg/pic-7.jpg",
+        "product_image": "https://i.ibb.co.com/yfMVTPS/Smartphone-Galaxy-X.jpg",
         "category": "phone",
         "price": 700,
         "description": "Latest smartphone with powerful features and battery life.",
@@ -111,7 +111,7 @@
     {
         "product_id": 8,
         "product_title": "Smartphone Mini Pro",
-        "product_image": "https://i.ibb.co.com/rc2fBb7/pic-8.jpg",
+        "product_image": "https://i.ibb.co.com/TR8Dwdq/iphone12p.jpg",
         "category": "phone",
         "price": 500,
         "description": "Compact smartphone with high-end performance.",
@@ -231,7 +231,7 @@
     {
         "product_id": 16,
         "product_title": "Smartphone UltraMax",
-        "product_image": "https://i.ibb.co.com/d51bGdT/pic-16.jpg",
+        "product_image": "https://i.ibb.co.com/X5XLVJj/Smartphone-Ultra-Max.webp",
         "category": "phone",
         "price": 800,
         "description": "High-end smartphone with an impressive camera and display.",
