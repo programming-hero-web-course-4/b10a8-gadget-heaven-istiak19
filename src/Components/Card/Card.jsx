@@ -8,7 +8,7 @@ const Card = ({ product }) => {
         navigate(`/product/${product_id}`)
     }
     return (
-        <div className="shadow-lg h-full rounded-lg">
+        <div className="shadow-lg h-full rounded-lg border-2 border-purple-300">
             <figure className='w-[280px] h-[181px] p-5'>
                 <img className='w-full h-full rounded-xl'
                     src={product_image}

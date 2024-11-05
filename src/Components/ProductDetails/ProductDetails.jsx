@@ -1,9 +1,8 @@
-import { useContext, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
-import { CartContext } from "../MainLayout/MainLayout";
+import { addToStoredCartList, addToStoredWishList } from "../utility/Utility";
 
 const ProductDetails = () => {
-    const [cart, setCart] = useContext(CartContext)
     const { id } = useParams()
     const idIn = parseInt(id)
     const data = useLoaderData()
@@ -15,6 +14,14 @@ const ProductDetails = () => {
 
     const { rating, availability, specification, description, price, category, product_image, product_id, product_title } = product
 
+    // Local Storage add to
+    const handleAddToCart = (id) => {
+        addToStoredCartList(id)
+    }
+
+    const handleWishList = (id) => {
+        addToStoredWishList(id)
+    }
 
     return (
         <div className="relative">
@@ -50,8 +57,8 @@ const ProductDetails = () => {
                             </div>
                             <p className="bg-gray-300 rounded-full px-1 py-2">{rating}</p>
                         </div>
-                        <button onClick={() => setCart(product_id)} className="btn bg-[#9538E2] text-white rounded-full mr-5">Add To Card <i className="fa-solid fa-cart-shopping"></i></button>
-                        <button className="btn border border-black rounded-full">
+                        <button onClick={() => handleAddToCart(id)} className="btn bg-[#9538E2] text-white rounded-full mr-5">Add To Card <i className="fa-solid fa-cart-shopping"></i></button>
+                        <button onClick={() => handleWishList(id)} className="btn border border-black rounded-full">
                             <i className="fa-solid fa-heart"></i>
                         </button>
                     </div>
