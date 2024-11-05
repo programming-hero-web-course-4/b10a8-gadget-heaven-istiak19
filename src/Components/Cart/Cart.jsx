@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { getStoredCartList, removeCartList } from "../utility/Utility";
 import CartCard from "./CartCard";
+import { toast } from "react-toastify";
 
 const Cart = () => {
     const [products, setProducts] = useState([]);
@@ -36,12 +37,14 @@ const Cart = () => {
         const storedCartListIn = storedCartList.map(id => parseInt(id))
         const cartListFilter = products.filter(product => storedCartListIn.includes(product.product_id))
         setCartList(cartListFilter)
+        toast.success('This item has been removed from your list.');
     }
 
     const handlePurchaseBtn = () => {
         setCartList([])
         localStorage.removeItem('cart-list')
         document.getElementById('my_modal_1').showModal()
+        toast.success('All items have been successfully purchase!');
     }
 
     return (
@@ -51,7 +54,7 @@ const Cart = () => {
                 <div className="flex items-center gap-5">
                     <h2 className="font-bold text-xl">Total Cost: {price}</h2>
                     <button onClick={handleSortedPrice} className="border-2 border-purple-400 rounded-full py-3 px-5 text-purple-500 btn">Sort By Price</button>
-                    <button onClick={handlePurchaseBtn}>Purchase</button>
+                    <button onClick={handlePurchaseBtn} className="btn bg-purple-500 rounded-full font-semibold border-2 border-purple-800 text-white">Purchase</button>
                 </div>
             </div>
             <div>
@@ -63,7 +66,7 @@ const Cart = () => {
             <dialog id="my_modal_1" className="modal">
                 <div className="modal-box text-center space-y-5">
                     <p><i class="fa-solid fa-certificate text-[72px] text-[#3EB655]"></i></p>
-                    <h3 className="font-bold text-lg">Payment Successfully</h3>
+                    <h3 className="font-bold text-lg border-b-2 pb-5">Payment Successfully</h3>
                     <p>Thanks For Purchasing.</p>
                     <div className="modal-action">
                         <form method="dialog">

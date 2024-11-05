@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { getStoredWishList, removeWishList } from "../utility/Utility";
 import Wish from "./Wish";
+import { toast } from "react-toastify";
 const WishList = () => {
     const [products, setProducts] = useState([]);
     const [wishlist, setWishList] = useState([])
@@ -23,6 +24,7 @@ const WishList = () => {
         const storedWishListIn = storedWishList.map(id => parseInt(id))
         const wishListFilter = products.filter(product => storedWishListIn.includes(product.product_id))
         setWishList(wishListFilter)
+        toast.success('This item has been removed from your list.');
     }
 
     return (

@@ -19,6 +19,7 @@ const ProductDetails = () => {
         addToStoredCartList(id)
     }
 
+    // Local Storage wish to
     const handleWishList = (id) => {
         addToStoredWishList(id)
     }

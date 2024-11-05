@@ -24,7 +24,8 @@ const CartCard = ({ cart, handleRemove }) => {
 };
 
 CartCard.propTypes = {
-
+    cart: PropTypes.object.isRequired,
+    handleRemove: PropTypes.func
 };
 
 export default CartCard;

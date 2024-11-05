@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-const Wish = ({ wish,handleRemove }) => {
+const Wish = ({ wish, handleRemove }) => {
     const { description, price, product_image, product_id, product_title } = wish
     return (
         <div className="shadow-lg mt-10 rounded-lg flex justify-between items-center">
@@ -17,14 +17,15 @@ const Wish = ({ wish,handleRemove }) => {
                 </div>
             </div>
             <div>
-                <button onClick={()=>handleRemove(product_id)} className='mr-10'><i class="fa-regular fa-circle-xmark text-red-400"></i></button>
+                <button onClick={() => handleRemove(product_id)} className='mr-10'><i class="fa-regular fa-circle-xmark text-red-400"></i></button>
             </div>
         </div>
     );
 };
 
 Wish.propTypes = {
-
+    wish: PropTypes.object.isRequired,
+    handleRemove: PropTypes.func
 };
 
 export default Wish;
