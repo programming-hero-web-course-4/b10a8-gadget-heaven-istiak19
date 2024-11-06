@@ -1,9 +1,9 @@
+import './category.css'
 import { useEffect, useState } from "react";
-import { NavLink, useNavigate } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Categories = () => {
     const [categories, setCategories] = useState([])
-    const navigate = useNavigate()
     useEffect(() => {
         fetch('/categories.json')
             .then(res => res.json())
@@ -11,9 +11,9 @@ const Categories = () => {
     }, [])
     return (
         <div>
-            <NavLink><button onClick={() => navigate('/')} className="btn rounded-full w-full mb-4">All Products</button></NavLink>
+            <NavLink to='/' className={({ isActive }) => isActive ? 'btn w-full active-btn mb-4 rounded-full' : 'btn w-full mb-4 rounded-full'}><button>All Products</button></NavLink>
             {
-                categories.map(category => <NavLink key={category.id} to={`/category/${category.category}`}><button className="btn flex w-full mb-3 rounded-full">{category.category}</button></NavLink>)
+                categories.map(category => <NavLink key={category.id} to={`/category/${category.category}`} className={({ isActive }) => isActive ? 'btn w-full active-btn mb-4 rounded-full' : 'btn w-full mb-4 rounded-full'}><button>{category.category}</button></NavLink>)
             }
         </div>
     );
