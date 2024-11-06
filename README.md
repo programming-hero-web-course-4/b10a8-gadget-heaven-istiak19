@@ -1,8 +1,37 @@
-# React + Vite
+# Gadget Heaven
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+### Live Website
+- https://gadget-heaven-19.netlify.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+### Requirement Document 
+- https://github.com/ProgrammingHero1/B10-A8-gadget-heaven/blob/main/Batch-10_Assignment-08.pdf
+
+
+
+### I have used for handling and managing data local storage
+* localStorage.setItem()
+* localStorage.getItem()
+* localStorage.removeItem()
+
+
+
+### List of React Fundamental concepts used in the project
+* Functional Components.
+* useState Hook.
+* useLocation Hook.
+* useNavigate Hook.
+* Local Storage.
+* useEffect Hook.
+* Conditional Rendering.
+* NavLink.
+* recharts.
+* useParams Hook.
+* useLoaderData Hook.
+* React Helmet library.
+* React Toast library.
+
+
+
+### 5 features of my website/project
