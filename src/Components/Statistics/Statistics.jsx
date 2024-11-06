@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet";
 import { useLoaderData } from "react-router-dom";
-import { Bar, BarChart,Legend, Tooltip, XAxis, YAxis } from 'recharts';
+import { Bar, BarChart, Legend, Tooltip, XAxis, YAxis } from 'recharts';
 
 const Statistics = () => {
     const products = useLoaderData()

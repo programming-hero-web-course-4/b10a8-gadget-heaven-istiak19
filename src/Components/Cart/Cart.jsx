@@ -10,8 +10,8 @@ const Cart = () => {
     const [cartList, setCartList] = useState([])
     const [price, setPrice] = useState(0)
 
-    const navigate=useNavigate()
-    const handleCloseBtn=()=>{
+    const navigate = useNavigate()
+    const handleCloseBtn = () => {
         navigate('/')
     }
 

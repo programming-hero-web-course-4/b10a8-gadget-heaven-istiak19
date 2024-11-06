@@ -1,11 +1,10 @@
-import { Outlet, useLoaderData } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import Banner from "../Banner/Banner";
 import Categories from "../Categories/Categories";
 import { Helmet } from "react-helmet";
 
 const Home = () => {
-    const products = useLoaderData()
-    
+
     return (
         <div>
             <Helmet>

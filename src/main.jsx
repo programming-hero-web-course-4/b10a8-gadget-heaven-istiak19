@@ -54,8 +54,8 @@ const router = createBrowserRouter([
         element: <DashBoard></DashBoard>
       },
       {
-        path:'/pre-order',
-        element:<ProOrder></ProOrder>
+        path: '/pre-order',
+        element: <ProOrder></ProOrder>
       }
     ]
   },
