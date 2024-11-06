@@ -22,16 +22,21 @@
 * useState Hook.
 * useLocation Hook.
 * useNavigate Hook.
-* Local Storage.
 * useEffect Hook.
-* Conditional Rendering.
-* NavLink.
-* recharts.
 * useParams Hook.
 * useLoaderData Hook.
+* Conditional Rendering.
+* Local Storage.
+* NavLink.
+* Recharts.
 * React Helmet library.
 * React Toast library.
 
 
 
 ### 5 features of my website/project
+* Cart & wishList button click then data storage in local storage.
+* Add to data and remove data show the toast.
+* Purchase button click local storage data remove and show the modal.
+* Use favicon for website title dynamic.
+* Category button wise show the products.

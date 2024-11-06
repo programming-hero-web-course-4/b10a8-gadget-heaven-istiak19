@@ -3,11 +3,17 @@ import { getStoredCartList, removeCartList } from "../utility/Utility";
 import CartCard from "./CartCard";
 import { toast } from "react-toastify";
 import { Helmet } from "react-helmet";
+import { useNavigate } from "react-router-dom";
 
 const Cart = () => {
     const [products, setProducts] = useState([]);
     const [cartList, setCartList] = useState([])
     const [price, setPrice] = useState(0)
+
+    const navigate=useNavigate()
+    const handleCloseBtn=()=>{
+        navigate('/')
+    }
 
     useEffect(() => {
         fetch('../products.json')
@@ -73,10 +79,10 @@ const Cart = () => {
                 <div className="modal-box text-center space-y-5">
                     <p><i class="fa-solid fa-certificate text-[72px] text-[#3EB655]"></i></p>
                     <h3 className="font-bold text-lg border-b-2 pb-5">Payment Successfully</h3>
-                    <p>Thanks For Purchasing.</p>
+                    <p className="text-gray-500">Thanks For Purchasing.</p>
                     <div className="modal-action">
                         <form method="dialog">
-                            <button className="btn">Close</button>
+                            <button onClick={handleCloseBtn} className="btn">Close</button>
                         </form>
                     </div>
                 </div>
