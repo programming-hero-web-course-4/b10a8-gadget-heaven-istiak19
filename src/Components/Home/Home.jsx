@@ -5,6 +5,7 @@ import { Helmet } from "react-helmet";
 
 const Home = () => {
     const products = useLoaderData()
+    
     return (
         <div>
             <Helmet>

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import { getStoredCartList, getStoredWishList } from "../utility/Utility";
 
 const NavBar = () => {
@@ -10,21 +10,28 @@ const NavBar = () => {
         <li><NavLink to='/pre-order'>Pre-Order</NavLink></li>
     </>
 
+    const location = useLocation()
+    const navbarStyle = {
+        backgroundColor: location.pathname === '/' ? '#9538E2' : 'white',
+        color: location.pathname === '/' ? 'white' : 'black',
+        padding: location.pathname === '/' ? '40px 80px' : '40px 120px',
+    };
+
     const [cart, setCart] = useState([])
     const [wish, setWish] = useState([])
     useEffect(() => {
         const storedCart = getStoredCartList()
         setCart(storedCart)
-    }, [cart])
+    }, [])
 
     useEffect(() => {
         const wishStored = getStoredWishList()
         setWish(wishStored)
-    }, [wish])
+    }, [])
 
     return (
-        <div className="max-w-7xl mx-auto">
-            <div className="navbar bg-base-100">
+        <div className="">
+            <div style={navbarStyle} className="navbar bg-base-100">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -57,18 +64,17 @@ const NavBar = () => {
                 <div className="navbar-end">
                     <a className="mr-5 border border-purple-400 rounded-full p-2 relative">
                         <i className="fa-solid fa-cart-shopping"></i>
-                        <span className="absolute top-0 right-0 transform translate-x-1/2 -translate-y-1/2 text-purple-500 rounded-full text-xs px-1">
+                        <span className="absolute top-0 right-0 transform translate-x-1/2 -translate-y-1/2 rounded-full text-xs px-1">
                             {cart.length}
                         </span>
                     </a>
                     <a className="border border-purple-400 rounded-full p-2 relative">
                         <i className="fa-solid fa-heart"></i>
-                        <span className="absolute top-0 right-0 transform translate-x-1/2 -translate-y-1/2 text-purple-500 rounded-full text-xs px-1">
+                        <span className="absolute top-0 right-0 transform translate-x-1/2 -translate-y-1/2 rounded-full text-xs px-1">
                             {wish.length}
                         </span>
                     </a>
                 </div>
-
             </div>
         </div>
     );
