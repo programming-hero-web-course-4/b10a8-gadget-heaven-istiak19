@@ -1,11 +1,17 @@
 import { Outlet, useLoaderData } from "react-router-dom";
 import Banner from "../Banner/Banner";
 import Categories from "../Categories/Categories";
+import { Helmet } from "react-helmet";
 
 const Home = () => {
     const products = useLoaderData()
     return (
         <div>
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>AllGadgets - GadgetHeaven</title>
+                <link rel="canonical" href="http://mysite.com/example" />
+            </Helmet>
             <Banner></Banner>
             <div className="max-w-7xl mx-auto">
                 <h2 className="text-center font-bold text-3xl mt-9">Explore Cutting-Edge Gadgets</h2>

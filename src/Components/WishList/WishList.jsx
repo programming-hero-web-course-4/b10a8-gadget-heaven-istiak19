@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { getStoredWishList, removeWishList } from "../utility/Utility";
 import Wish from "./Wish";
 import { toast } from "react-toastify";
+import { Helmet } from "react-helmet";
 const WishList = () => {
     const [products, setProducts] = useState([]);
     const [wishlist, setWishList] = useState([])
@@ -29,6 +30,11 @@ const WishList = () => {
 
     return (
         <div>
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>WishList - GadgetHeaven</title>
+                <link rel="canonical" href="http://mysite.com/example" />
+            </Helmet>
             <div className="mt-5">
                 <h2 className="font-bold text-xl">Wishlist</h2>
             </div>

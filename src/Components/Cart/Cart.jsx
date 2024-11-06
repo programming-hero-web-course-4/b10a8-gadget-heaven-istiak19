@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { getStoredCartList, removeCartList } from "../utility/Utility";
 import CartCard from "./CartCard";
 import { toast } from "react-toastify";
+import { Helmet } from "react-helmet";
 
 const Cart = () => {
     const [products, setProducts] = useState([]);
@@ -49,6 +50,11 @@ const Cart = () => {
 
     return (
         <div>
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>Cart - GadgetHeaven</title>
+                <link rel="canonical" href="http://mysite.com/example" />
+            </Helmet>
             <div className="flex justify-between items-center mt-5">
                 <h2 className="font-bold text-xl">Cart</h2>
                 <div className="flex items-center gap-5">
